@@ -6,10 +6,8 @@ import UserOutput from './UserOutput/UserOutput';
 class App extends Component {
   state = {
     users: [
-      { username: 'Franzi',
-        hobby: 'Coding' },
-      { username: 'Carl',
-        hobby: 'Running' }
+      { username: 'Franzi' },
+      { username: 'Carl' }
     ]
   }
 
@@ -32,11 +30,11 @@ userInputHandler = (event) => {
       <div className="App" style={style}>
        <h1>The first assignment</h1>
        <UserOutput name={this.state.users[0].username}
-       hobby={this.state.users[0].hobby}/>
-       <p>Change the users name:</p>
+       hobby={'Coding'}/>
+       <p>Change the first users name:</p>
        <UserInput name={this.state.users[0].username} changed={this.userInputHandler}/>
        <UserOutput name={this.state.users[1].username}
-       hobby={this.state.users[1].hobby}/>
+       hobby={'Running'}/>
       </div>
     );
   }
