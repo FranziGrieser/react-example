@@ -1,0 +1,10 @@
+.other {
+  margin: 10px;
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  font: inherit;
+}
